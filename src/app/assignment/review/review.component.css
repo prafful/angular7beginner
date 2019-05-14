@@ -1,0 +1,19 @@
+.title{
+    background-color: aqua;
+}
+
+.thumbnail{
+    background-color:pink;
+    float:left;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+}
+
+.desc{
+    background-color: chocolate;
+    height: 100px;
+    width:80%;
+    float: right;
+    position: relative;
+}

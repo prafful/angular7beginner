@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }} is {{ type }}!
+  </h1>
+  <p>
+    I will give it {{ score }}
+  </p>
+  <p>
+    {{ 10+10 }}
+  </p>
+  <p>
+    {{ displayMessage() }}
+  </p>
+  
+</div>
+<div>
+  Working with parent and child components:
+  <div>
+    <obb-family></obb-family>
+  </div>
+  <div>
+    Assignment:
+    <div class="review">
+      <obb-review></obb-review>
+    </div>
+  </div>
+</div>
+<hr>
+<div>
+  Examples of directives (they convert your html to super html. They add more features to simple html elements.)
+  <ol>
+    <li>*ngFor</li>
+    <li>*ngIf</li>
+    <li>*ngSwitch</li>
+  </ol>
+Demo:
+<br>
+  <obb-directive></obb-directive>
+
+</div>
+
+<router-outlet></router-outlet>
