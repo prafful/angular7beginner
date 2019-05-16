@@ -38,11 +38,7 @@ export class DirectiveComponent implements OnInit {
 
   city = "022"
 
-  money = 88
-
-  name = 'chance-e-illiya'
-
-  birthday = new Date()
+ 
 
   toggleCheck = function(){
    

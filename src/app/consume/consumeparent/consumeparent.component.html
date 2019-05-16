@@ -1,0 +1,20 @@
+<div class="parent">
+  I am Consume Parent Component!
+  <br>
+  Name: {{ name }}
+<div>
+<br>
+<div class="child">
+  I am child: 
+  <br>
+  <obb-child [sendName]="name" (sendToParent)="receivedNewName($event)"></obb-child>
+</div>
+<br>
+<br>
+<hr>
+<a routerLink="child1">Child 1</a> &nbsp;
+<a routerLink="child2">Child 2</a> &nbsp;
+<br>
+<br>
+<router-outlet></router-outlet>
+  

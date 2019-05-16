@@ -2,17 +2,10 @@
 
   Family -> I am parent component. I have {{ childCount  }} child components!
 </p>
-<ol>
-  <li>
-    <obb-father></obb-father>
-  </li>
-  <li>
-    <obb-mother></obb-mother>
-  </li>
-  <li>
-    <obb-daughter></obb-daughter>
-  </li>
-  <li>
-    <obb-son></obb-son>
-  </li>
-</ol>
+<a routerLink="father">Father</a> &nbsp;
+<a routerLink="mother">Mother</a> &nbsp;
+<a routerLink="daughter">Daughter</a> &nbsp;
+<a routerLink="son">Son</a> &nbsp;
+<br>
+<br>
+<router-outlet></router-outlet>
