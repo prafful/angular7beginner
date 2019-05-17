@@ -132,5 +132,13 @@
       }
     }
   },
-  "defaultProject": "angular001"
+  "defaultProject": "angular001",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": true,
+        "css": true
+      }
+    }
+  }
 }

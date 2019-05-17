@@ -21,6 +21,25 @@ import { ConsumeparentComponent } from './consume/consumeparent/consumeparent.co
 import { Consumechild1Component } from './consume/consumechild1/consumechild1.component';
 import { Consumechild2Component } from './consume/consumechild2/consumechild2.component';
 import { ChildComponent } from './consume/child/child.component';
+import { NospecComponent } from './delete/nospec/nospec.component';
+import { Nospec1Component } from './delete/nospec1/nospec1.component';
+import { Nospec2Component } from './delete/nospec2/nospec2.component';
+import { Nospec3Component } from './delete/nospec3/nospec3.component';
+import { Nospec4Component } from './delete/nospec4/nospec4.component';
+import { Nospec5Component } from './delete/nospec5/nospec5.component';
+import { Nospec6Component } from './delete/nospec6/nospec6.component';
+import { Nospec7Component } from './delete/nospec7/nospec7.component';
+import { Nospec8Component } from './delete/nospec8/nospec8.component';
+import { Nospec9Component } from './delete/nospec9/nospec9.component';
+import { Nospec10Component } from './delete/nospec10/nospec10.component';
+import { Flatcomponent1Component } from './delete/componentnotinfolder/flatcomponent1.component';
+import { Flatcomponent2Component } from './delete/componentnotinfolder/flatcomponent2/flatcomponent2.component';
+import { Flatcomponent3Component } from './delete/componentnotinfolder/flatcomponent3.component';
+import { Flatcomponent4Component } from './delete/componentnotinfolder/flatcomponent4.component';
+import { Flatcomponent5Component } from './delete/componentnotinfolder/flatcomponent5.component';
+import { Component6Component } from './delete/componentnotinfolder/component6/component6.component';
+import { TemplateformComponent } from './forms/templateform/templateform.component';
+import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 
 
 @NgModule({
@@ -41,7 +60,26 @@ import { ChildComponent } from './consume/child/child.component';
     ConsumeparentComponent,
     Consumechild1Component,
     Consumechild2Component,
-    ChildComponent
+    ChildComponent,
+    NospecComponent,
+    Nospec1Component,
+    Nospec2Component,
+    Nospec3Component,
+    Nospec4Component,
+    Nospec5Component,
+    Nospec6Component,
+    Nospec7Component,
+    Nospec8Component,
+    Nospec9Component,
+    Nospec10Component,
+    Flatcomponent1Component,
+    Flatcomponent2Component,
+    Flatcomponent3Component,
+    Flatcomponent4Component,
+    Flatcomponent5Component,
+    Component6Component,
+    TemplateformComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
@@ -106,6 +144,15 @@ import { ChildComponent } from './consume/child/child.component';
           }
         ]
       },
+      {
+        path:'template',
+        component:TemplateformComponent
+      },
+      {
+        path:'reactive',
+        component:ReactiveformComponent
+      },
+
       {
         path:'**',
         component:BadrouteComponent
