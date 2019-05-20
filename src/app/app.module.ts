@@ -2,8 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { FamilyComponent } from './nuclearfamily/family/family.component';
 import { FatherComponent } from './nuclearfamily/father/father.component';
@@ -40,6 +43,8 @@ import { Flatcomponent5Component } from './delete/componentnotinfolder/flatcompo
 import { Component6Component } from './delete/componentnotinfolder/component6/component6.component';
 import { TemplateformComponent } from './forms/templateform/templateform.component';
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
+import { AnimateComponent } from './animation/animate/animate.component';
+import { AnimationComponent } from './animate/animation/animation.component';
 
 
 @NgModule({
@@ -79,12 +84,16 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
     Flatcomponent5Component,
     Component6Component,
     TemplateformComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    AnimateComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
       {
         path:'',
@@ -152,7 +161,10 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
         path:'reactive',
         component:ReactiveformComponent
       },
-
+      {
+        path:'animate',
+        component:AnimationComponent
+      },
       {
         path:'**',
         component:BadrouteComponent
